@@ -1,0 +1,44 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8rem;
+    margin: 16rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap:1rem 0;
+    height: 100%;
+    width: 100%;
+}
+
+#username {
+    padding: 0.5rem 1rem;
+}
+
+#password {
+    padding: 0.5rem 1rem;
+}
+
+.container-btm{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between; 
+}
+
+.register-btn{
+    padding: 0 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-btn{
+    padding: 0 2rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    background-color: lightskyblue;
+}

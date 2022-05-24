@@ -1,0 +1,68 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+/* Headers */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.username {
+    text-decoration: underline;
+}
+
+/* Form */
+.todo-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+.sub-title{
+    align-self: flex-start;
+    color: grey;
+}
+
+.attach-btn{
+    margin: 0 2rem;
+}
+
+.view-btn{
+    margin: 0 2rem;
+    padding: 0 1rem;
+    background-color: lightblue;
+}
+
+.todo-label{
+    text-transform: capitalize;
+}
+
+.logout-btn {
+    display: flex;
+    flex-direction: flex-start;
+    padding: 0 4rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
