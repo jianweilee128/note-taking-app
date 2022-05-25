@@ -1,15 +1,15 @@
 .todo-container {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    justify-content: center;
+    padding: 0 8rem;
 }
 
 /* Headers */
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
 }
 
 .title {
@@ -18,6 +18,38 @@ header {
 
 .username {
     text-decoration: underline;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.sub-title{
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0 16rem;
+    align-self: flex-start;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.new-task-container {
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 16rem;
+    margin: 2rem 0;
+}
+
+.new-task {
+    width: 100%;
+}
+
+.new-task:focus{
+    outline: none;
+}
+
+.add-task{
+    cursor: pointer;
 }
 
 /* Form */
@@ -25,8 +57,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0 4rem;
+    align-items: flex-start;
+    padding: 0 16rem;
 }
 
 form {
@@ -37,32 +69,54 @@ form {
 .todo-item {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     padding: 1rem 0;
 }
 
-.sub-title{
-    align-self: flex-start;
-    color: grey;
+input[type='checkbox'] {
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+input[type='file']{
+    display: none;
 }
 
 .attach-btn{
+    box-sizing: border-box;
     margin: 0 2rem;
+    padding: 0.5rem 1.5rem;
+    width: 120px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid grey;
 }
 
 .view-btn{
+    box-sizing: border-box;
     margin: 0 2rem;
-    padding: 0 1rem;
+    padding: 0.5rem 1.5rem;
+    width: 120px;
+    text-transform: uppercase;
     background-color: lightblue;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid grey;
 }
 
-.todo-label{
+.todo-task{
     text-transform: capitalize;
+    font-size: 1rem;
 }
 
 .logout-btn {
-    display: flex;
-    flex-direction: flex-start;
-    padding: 0 4rem;
-    text-decoration: underline;
     cursor: pointer;
+    text-decoration: underline;
+    font-size: 1rem;
+    text-transform: capitalize;
 }
